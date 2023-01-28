@@ -10,7 +10,7 @@ Public Sub SaveAttachmentsToDisk(MItem As MailItem)
     
     Dim saveName As String
 
-sSaveFolder = "C:\Users\JHARRIS2\Documents\2. Mortgages\Elasticity Model\elasticity-analysis-main\data-raw\"
+sSaveFolder = "C:\Users\JHARRIS2\Documents\"
 
 For Each oAttachment In MItem.Attachments
 saveName = sSaveFolder & Format(MItem.ReceivedTime, "yyyymmdd") & "_" & oAttachment.DisplayName
